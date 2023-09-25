@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Bloggersans";
+  font-display: swap;
+  src: url("../fonts/Bloggersans.woff") format("woff"), url("../fonts/Bloggersans.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"),
+    url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--background-color);
@@ -99,8 +116,358 @@ img {
 }
 
 /**Header**/
+/* .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
 
+} */
 
+.header {
+
+    padding: 20px 27px 0 27px;
+    justify-content: center;
+    background-color: var(--color-darkbackground);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/rectangle.png);
+  }
+  
+.header-promo {
+    display: flex;
+}
+  .promo-title {
+    margin-top: 132px;
+    font-weight: bold;
+    font-size: 130px;
+    text-transform: uppercase;
+    color: #ffd324;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 29px rgba(255, 249, 94, 0.54);
+  }
+  
+  .promo-subtitle {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #ffd324;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 29px rgba(255, 249, 94, 0.54);
+  }
+  
+  .promo-descr {
+    width: 694px;
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 130%;
+    color: #ffffff; 
+  }
+  
+  .promo-btn {
+    margin-top: 30px;
+  }
+  
+  .header-logo {
+    margin-right: 195px;
+  }
+  
+  .header-phone {
+    font-family: "Bloggersans";
+    margin-right: 80px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 125%;
+    color: #ffffff;
+  }
+  
+  .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .header-menu li {
+    margin-right: 50px;
+  }
+  
+  .header-menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .header-menu li a {
+    font-family: "ProximaNova";
+    font-size: 24px;
+    line-height: 130%;
+    color: #ffffff;
+    position: relative;
+  }
+  
+  .header-menu li a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .header-menu li a:hover:before {
+    width: 100%;
+  }
+
+.header-button {
+    margin-left: auto;
+    display: flex;
+width: 286px;
+height: 55px;
+padding: 15px 25px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 30px;
+background: var(--akcent, #FFD324);
+/* Shadow */
+box-shadow: 0px 0px 29px 0px rgba(255, 249, 94, 0.54);
+}
+/**Section 1**/
+
+.section-one-h-one {
+    color: var(--akcent, #FFD324);
+    font-variant-numeric: lining-nums proportional-nums;
+    text-shadow: 0px 0px 29px rgba(255, 249, 94, 0.54), 0px 0px 10px rgba(0, 0, 0, 0.30);
+    font-family: Blogger Sans;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 143px */
+    text-transform: uppercase;
+}
+/**Section 2**/
+.about-company {
+  position: relative;
+  min-height: 990px;
+  padding: 150px 27px 150px 27px;
+}
+
+.about__wrapper {
+  position: relative;
+  height: 662px;
+}
+
+.about__wrapimg {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 760px 444px;
+  grid-template-columns: 760px 444px;
+  grid-auto-rows: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.about .img-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.about .img-2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.about .img-3 {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.about__descr {
+  padding: 60px 30px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 790px;
+  height: 462px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 40px rgba(142, 162, 170, 0.2);
+  box-shadow: 0px 0px 40px rgba(142, 162, 170, 0.2);
+  border-radius: 15px;
+}
+
+.about__title {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #1a202c;
+}
+
+.about__text {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+  color: #1a202c;
+}
+
+.about__text p {
+  font-family: "ProximaNova";
+  margin-bottom: 10px;
+}
+/**Section 3**/
+.catalog {
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 85px;
+  }
+  
+  .catalog-title {
+    font-size: 60px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #2d3748;
+    text-align: center;
+  }
+  
+  .catalog-tabs {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .catalog-tab {
+    margin: 0 15px;
+    padding: 15px 25px;
+    width: 286px;
+    height: 55px;
+    border: 1px solid #ffd324;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .catalog-tab_active {
+    background: #ffd324;
+  }
+  
+  .catalog-tab:hover {
+    background: #ffd324;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 29px rgba(255, 249, 94, 0.54);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 29px rgba(255, 249, 94, 0.54);
+  }
+  
+  .catalog-tab a {
+    font-size: 20px;
+    line-height: 125%;
+    color: #2d3748;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .catalog-cards {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  .catalog-card {
+    cursor: pointer;
+  }
+  
+  .catalog-card:hover .catalog__button {
+    opacity: 1;
+  }
+  
+  .catalog-name {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+    color: #1a202c;
+  }
+  
+  .catalog-price {
+    font-family: "ProximaNova";
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #1a202c;
+  }
+  
+  .catalog-button {
+    opacity: 0;
+    padding: 15px 25px;
+    width: 286px;
+    height: 55px;
+    background: #ffd324;
+    border-radius: 30px;
+    font-size: 20px;
+    line-height: 125%;
+    color: #2d3748;
+    text-align: center;
+    margin-top: 10px;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  
+  .catalog-button:hover {
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 29px rgba(255, 249, 94, 0.54);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 29px rgba(255, 249, 94, 0.54);
+  }
+  
+/**Section 5**/
+.section-five {
+    padding-top: 150px;
+    padding-bottom: 178px; 
+}
 @media (max-width: 427px) {
 
 }
