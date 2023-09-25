@@ -1,0 +1,138 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+    color: #434455
+}
+
+:root {
+    --background-color: #FFFFFF;
+    --color-nav-titles: #2E2F42;
+    --color-text-address: #434455;
+    --color-h1-textbutton: #FFFFFF;
+    --color-logo-textbutton: #4D5AE5;
+    --color-soc-icons: #4D5AE5;
+    --color-header-cardsbackground: #F4F4FD;
+    --color-footertext: #F4F4FD;
+    --color-buttonbackground: #F4F4FD;
+    --color-darkbackground: #2E2F42;
+    --color-hoverfocus-elements: #404BBF;
+    --color-icons-passive: #8e8f99;
+    --color-modal-items: #8e8f99;
+    --color-backdrop-modal: #FCFCFC;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-header,
+.list-address {
+    gap: 40px;
+}
+
+.link {
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover,
+.link:focus {
+    text-decoration: none;
+    color: var(--color-hoverfocus-elements);
+}
+
+.link.current {
+    color: var(--color-hoverfocus-elements);
+}
+
+.button:hover,
+.button:focus {
+    font-family: inherit;
+    text-decoration: none;
+    background: var(--color-hoverfocus-elements);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: var(--color-h1-textbutton);
+}
+
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/**Header**/
+
+
+@media (max-width: 427px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+
+.go-top {
+    position: fixed;
+    z-index: 7;
+    border-radius: 50%;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+    color: var(--color-soc-icons);
+    border: 1px solid var(--color-soc-icons);
+    background-color: var(--background-color);
+    padding: 15px;
+}
+
+
+.go-top:hover {
+    color: var(--color-hoverfocus-elements);
+    border: 1px solid var(--color-hoverfocus-elements);
+    background-color: rgba(0, 51, 153, 0.15);
+}
+
+
+.go-top--show {
+    display: block;
+}
